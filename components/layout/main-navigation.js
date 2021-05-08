@@ -24,12 +24,12 @@ function MainNavigation() {
               <Link href="/auth">Login</Link>
             </li>
           )}
-          {session && !loading && (
+          {session && (
             <li>
               <Link href="/profile">Profile</Link>
             </li>
           )}
-          {session && !loading && (
+          {session && (
             <li>
               <button onClick={logoutHandler}>Logout</button>
             </li>
